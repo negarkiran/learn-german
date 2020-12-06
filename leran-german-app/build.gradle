@@ -22,6 +22,15 @@ dependencies {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 
+    testImplementation group: 'de.flapdoodle.embed', name: 'de.flapdoodle.embed.mongo'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.8.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '6.8.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-spring', version: '6.8.0'
+    testImplementation group: 'org.mongodb', name: 'mongo-java-driver', version: '3.12.3'
+    testImplementation group: 'de.bwaldvogel', name: 'mongo-java-server', version: '1.27.0'
+    testImplementation group: 'org.apache.httpcomponents', name: 'httpclient'
+    testImplementation group: 'com.jayway.jsonpath', name: 'json-path-assert'
+
     implementation project(":learn-german-rest")
     implementation project(":learn-german-api")
     implementation project(":learn-german-domain")

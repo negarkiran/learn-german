@@ -1,1 +1,7 @@
-spring.data.mongodb.host: mongodb
+server.port: 8080
+
+spring.data.mongodb.uri: mongodb://localhost/german
+spring.data.mongodb.port: 27017
+
+#Enable only below configuration to use docker-compose
+#spring.data.mongodb.uri: mongodb

@@ -7,6 +7,9 @@ public class WordResponse {
 
     private String german;
 
+    public WordResponse() {
+    }
+
     public String getId() {
         return id;
     }

@@ -37,7 +37,9 @@ public class WordResource {
 
     @GetMapping(value = "/words")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<WordMetadata> getWords(@RequestParam int page, @RequestParam int size) {
+    public ResponseEntity<WordMetadata> getWords(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
         return new ResponseEntity<>(wordRequestBoundary.getAll(page, size), HttpStatus.OK);
     }
 
